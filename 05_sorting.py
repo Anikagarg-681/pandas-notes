@@ -8,13 +8,13 @@ employee = {
 
 df = pd.DataFrame(employee)
 
-# print(df)
+print(df)
 
 # in ascending order (by default)
-#print(df.sort_values(by="Salary"))
+print(df.sort_values(by="Salary"))
 
 # in descending order 
-#print(df.sort_values(by="Salary", ascending=False))
+print(df.sort_values(by="Salary", ascending=False))
 
 # sorting by multiple columns
 print(df.sort_values(

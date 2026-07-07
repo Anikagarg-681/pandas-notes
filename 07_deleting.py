@@ -8,24 +8,24 @@ employee = {
 }
 
 df = pd.DataFrame(employee)
-#print(df)
+print(df)
 
 df["Total Income"]= df["Salary"]+ df["Bonus"]
-#print(df)
+print(df)
 
 # Deleting a Column
-#print(df.drop(columns=["Total Income"]))
+print(df.drop(columns=["Total Income"]))
 
 # Deleting  Multiple Columns
-#print(df.drop(columns=["Bonus","Total Income"]))
+print(df.drop(columns=["Bonus","Total Income"]))
 
-#print(df)
+print(df)
 
 # Deleting a Row
-#print(df.drop(index=0))
+print(df.drop(index=0))
 
 # Deleting Multiple Rows
-#print(df.drop(index=[1,4]))
+print(df.drop(index=[1,4]))
 
 # Delete Rows After Filtering
 print(df.drop(df[df["Salary"] < 50000].index))
