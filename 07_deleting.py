@@ -29,3 +29,9 @@ print(df.drop(index=[1,4]))
 
 # Delete Rows After Filtering
 print(df.drop(df[df["Salary"] < 50000].index))
+
+# Permanently delete
+df = df.drop(columns=["Bonus"])  #method-01
+print(df)
+
+df.drop(columns=["Bonus"], inplace=True)  #method-02

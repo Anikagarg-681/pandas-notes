@@ -15,7 +15,7 @@ print(df[["Age","Name"]])
 print(df[["Name"]])
 
 
-# Selecting rows using iloc
+# Selecting rows using iloc (slicing)
 
 print(df.iloc[0])               # First row (Series)
 print(df.iloc[[0,2]])           # Multiple rows (DataFrame)
@@ -27,6 +27,8 @@ print(df.iloc[:,0])             # All rows, first column
 print(df.iloc[:,[0,2]])         # All rows, columns 0 and 2
 print(df.iloc[:,:])             # Entire DataFrame
 
+
+# Selecting rows using loc (no slicing)
 
 import pandas as pd
 
