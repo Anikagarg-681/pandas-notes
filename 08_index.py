@@ -8,16 +8,16 @@ employee = {
 
 df = pd.DataFrame(employee)
 
-#print(df)
+print(df)
 
 # set_index()
-#print(df.set_index("Employee ID"))
+print(df.set_index("Employee ID"))
 
-#print(df.index)
+print(df.index)
 
 # reset_index()
 df = df.set_index("Employee ID")
-#print(df)
+print(df)
 print(df.reset_index())
 print(df)
 df.reset_index(drop=True)

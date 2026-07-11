@@ -11,10 +11,10 @@ employee = {
 df = pd.DataFrame(employee)
 
 # unique()
-#rint(df["Department"].unique()) # Which departments exist in the company?
+print(df["Department"].unique()) # Which departments exist in the company?
 
 # nunique()
-#print(df["Department"].nunique()) # "How many different departments are there?"
+print(df["Department"].nunique()) # "How many different departments are there?"
 
 # value_counts()
 print(df["Department"].value_counts()) # How many employees are in each department?

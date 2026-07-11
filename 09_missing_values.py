@@ -10,13 +10,13 @@ employee = {
 
 df = pd.DataFrame(employee)
 
-#print(df)
+print(df)
 
 # Finding missing values 
-#print(df.isnull())
+print(df.isnull())
 
 # Counting Missing Values
-#print(df.isnull().sum())
+print(df.isnull().sum())
 
 import pandas as pd
 import numpy as np
@@ -29,28 +29,28 @@ employee = {
 
 df = pd.DataFrame(employee)
 
-#print(df)
+print(df)
 
 # dropna() (Delete them)
 
-#print(df.dropna()) # By default, Pandas deletes the entire row if any value in that row is missing.
+print(df.dropna()) # By default, Pandas deletes the entire row if any value in that row is missing.
 
-#print(df.dropna(how="all")) # Delete rows only if every value is missing.
+print(df.dropna(how="all")) # Delete rows only if every value is missing.
 
 
 # Filling values
-#print(df.fillna(30))  # Replace every missing value in the entire DataFrame with 30.
+print(df.fillna(30))  # Replace every missing value in the entire DataFrame with 30.
 
 # Filling Only One Column
 df["Age"] = df["Age"].fillna(30)
-#print(df)
+print(df)
 
 # Filling Different Columns with Different Values
 df=df.fillna({
     "Age":30,
     "Salary":65000
 })
-#print(df)
+print(df)
 
 import pandas as pd
 import numpy as np
@@ -62,7 +62,7 @@ employee = {
 }
 
 df = pd.DataFrame(employee)
-#print(df)
+print(df)
 # Fill it with the average age.
  
 df["Age"] = df["Age"].fillna(df["Age"].mean()) # Mean 

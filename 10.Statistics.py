@@ -8,28 +8,28 @@ employee = {
 
 df = pd.DataFrame(employee)
 
-#print(df)
+print(df)
 
 # describe()
-#print(df.describe())
+print(df.describe())
 
 # count- How many non-missing values
 # std- How spread out are the values
 
 # mean()
-#print(df["Salary"].mean())
+print(df["Salary"].mean())
 
 # max()
-#print(df["Salary"].max())
+print(df["Salary"].max())
 
 # min()
-#print(df["Salary"].min())
+print(df["Salary"].min())
 
 # count()
-#print(df["Salary"].count())
+print(df["Salary"].count())
 
 # median()
-#print(df["Salary"].median())
+print(df["Salary"].median())
 
 # mode()
 print(df["Salary"].mode())  # Most frequent value
